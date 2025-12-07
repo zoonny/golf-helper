@@ -25,7 +25,7 @@ console.log(UNIT_OF_CUP);
 // 식 : 거리 + (오르막 * 10 * 1.5) = 퍼팅거리 --> 9.83 + (0.25 * 10 * 1.5) = 13.58미터
 let distance = 9.83;
 let addedDistance = 0.25 * 10 * 1.5;
-console.log("퍼팅거리:", distance + addedDistance, "미터");
+console.log('퍼팅거리:', distance + addedDistance, '미터');
 // 왼쪽으로 4컵 --> 거리 10미터 기준 4컵은 **4도**
 // 5도는 New 한 칸 공식 줄 선 상에서 끝선까지 조준해서 퍼팅, 각도를 줄이기 위해 살짝 내려서 퍼팅
 
@@ -37,11 +37,20 @@ console.log("퍼팅거리:", distance + addedDistance, "미터");
 // 식 : 거리 - (내리막 * 10 * 1) = 퍼팅거리 --> 4.2 - (0.1 * 10 * 1) = 3.2미터
 distance = 6.62;
 addedDistance = 0.15 * 10 * 1;
-console.log("퍼팅거리:", distance - addedDistance, "미터");
+console.log('퍼팅거리:', distance - addedDistance, '미터');
 // 오른쪽으로 4컵 --> 거리 6~7미터 기준 4컵은 **6~7도** ???
 // 5도는 New 한 칸 공식 줄 선 상에서 끝선까지 조준해서 퍼팅, 각도를 올리기 위해 살짝 올려서 퍼팅
 
 // 퍼팅 돌려서 하는 경우 : 방향키 1번시 0.5도, 2번 1도
 // 5미터, 왼쪽으로 4컵 --> 5미터 기준 5컵 10도, 4컵 8도 --> 방향키 8도 / 0.5도 = 16번 클릭
 const clickCount = 8 / 0.5;
-console.log("방향키 클릭 수:", clickCount);
+console.log('방향키 클릭 수:', clickCount);
+
+// 퍼팅 세기 조정
+// [약간빠름]
+// 3m  -> 2.5m/s
+// 5m  -> 3.2m/s
+// 7m  -> 3.9m/s
+// 10m -> 4.7m/s
+// 15m -> 5.6m/s
+// 20m -> 6.3m/s
